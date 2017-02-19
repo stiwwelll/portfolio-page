@@ -1,0 +1,32 @@
+title: Marco Steffensky - Web Developer
+email: marco.steffensky@gmail.com
+description: "Hey there! I'm Marco, a Web Developer from Berlin. Have a look at my portfolio page."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Build settings
+markdown: kramdown
+theme: portfolio-theme
+
+assets:
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/scripts
+    - _assets/fonts
+    - uploads
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+gems:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-sitemap
+  - mini_magick
+  - autoprefixer-rails
+exclude:
+  - Gemfile
+  - Gemfile.lock

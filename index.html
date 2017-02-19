@@ -1,0 +1,142 @@
+---
+layout: default
+---
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+</ul>
+
+<div id="fullpage">
+  <div class="section">
+    <div class="container">
+      <div class="row greeting">
+        <div class="col-md-12">
+          {% img "part1a.png" class:"intro-landscape center-block img-responsive" alt:"Welcome image landscape" %}
+          {% img "part1b.png" class:"intro-portrait center-block img-responsive" alt:"Welcome image mobile"%}
+        </div>
+        <div class="col-md-12">
+          {% img "arrow-down.png" class:"center-block img-responsive bounce" alt:"Arrow"%}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- intro section -->
+  <div id="about" class="section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+          {% img "about_section.png" class:"img-responsive headline" alt:"About Me" %}
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+          <br>
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+          {% img "part2.png" class:"img-responsive hero" alt:"My Skills" %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="work" class="section">
+    <div class="row">
+      <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12">
+        {% img "work_section.png" class:"img-responsive headline" alt:"Work" %}
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            {% img "kremanski.png" class:"center-block img-responsive" alt:"Kremanski" %}
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work-description">
+            <h2><a href="http://www.kremanski.de" target="_blank">Kremanski</a></h2>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
+            <div class="skill-icons">
+              {% img "html.png" class:"img-responsive html-icon" alt:"HTML" %}
+              {% img "css.png" class:"img-responsive css-icon" alt:"CSS" %}
+              {% img "bootstrap.png" class:"img-responsive bs-icon" alt:"Bootstrap" %}
+              {% img "jquery.png" class:"img-responsive jq-icon" alt:"jQuery" %}
+              {% img "rubyonrails.png" class:"img-responsive ror-icon" alt:"RubyonRails" %}
+              {% img "cms.png" class:"img-responsive cms-icon" alt:"CMS" %}
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            {% img "work-typ.png" class:"img-responsive work-guy" alt:"Work Guy" %}
+          </div>
+        </div>
+      </div>
+      <div class="row slide" data-anchor="slide2">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            {% img "slackfit.png" class:"center-block img-responsive" alt:"Gibbon Slackfit" %}
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work-description">
+            <h2><a href="http://www.gibbon-slackfit.com" target="_blank">Gibbon Slackfit</a></h2>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
+            <div class="skill-icons">
+              {% img "html.png" class:"img-responsive html-icon" alt:"HTML" %}
+              {% img "css.png" class:"img-responsive css-icon" alt:"CSS" %}
+              {% img "bootstrap.png" class:"img-responsive bs-icon" alt:"Bootstrap" %}
+              {% img "jquery.png" class:"img-responsive jq-icon" alt:"jQuery" %}
+              {% img "rubyonrails.png" class:"img-responsive ror-icon" alt:"RubyonRails" %}
+              {% img "cms.png" class:"img-responsive cms-icon" alt:"CMS" %}
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            {% img "work-typ.png" class:"img-responsive work-guy" alt:"Work Guy" %}
+          </div>
+        </div>
+      </div>
+      <div class="row slide" data-anchor="slide3">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            {% img "demo.png" class:"center-block img-responsive" alt:"Rails Demo" %}
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 work-description">
+            <h2><a href="https://blnbikesrailsdemo.herokuapp.com/" target="_blank">Demo Bike Shop</a></h2>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
+            <div class="skill-icons">
+              {% img "html.png" class:"img-responsive html-icon" alt:"HTML" %}
+              {% img "css.png" class:"img-responsive css-icon" alt:"CSS" %}
+              {% img "bootstrap.png" class:"img-responsive bs-icon" alt:"Bootstrap" %}
+              {% img "jquery.png" class:"img-responsive jq-icon" alt:"jQuery" %}
+              {% img "rubyonrails.png" class:"img-responsive ror-icon" alt:"RubyonRails" %}
+              {% img "cms.png" class:"img-responsive cms-icon" alt:"CMS" %}
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            {% img "work-typ.png" class:"img-responsive work-guy" alt:"Work Guy" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% img "linie.png" class:"center-block img-responsive line" alt:"Linie" %}
+  </div>
+  <div id="contact" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+          {% img "contact_section.png" class:"img-responsive headline" alt:"Contact" %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-6 col-md-offset-2 col-md-6 col-sm-12 col-xs-12">
+
+        </div>
+        <div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col col-md-2 col-sm-12 col-xs-12">
+          {% img "contact-typ.png" class:"center-block img-responsive contactguy" alt:"Contact Guy" %}
+        </div>
+      </div>
+      {% img "linie.png" class:"center-block img-responsive line-last" alt:"Linie" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-offset-5 col-lg-2 col-md-offset-5 col col-md-2 col-sm-12 col-xs-12">
+      <div class="social-icons center-block">
+
+      </div>
+    </div>
+  </div>
+</div>

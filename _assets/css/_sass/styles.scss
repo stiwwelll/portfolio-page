@@ -1,0 +1,276 @@
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+      transform: translateY(0)
+  }
+  40% {
+      transform: translateY(-20px)
+  }
+  60% {
+      transform: translateY(-15px)
+  }
+}
+
+@font-face {
+  font-family: 'DK Prince';
+  src: font-url('dk_prince_frog-webfont.eot');
+  src: font-url('dk_prince_frog-webfont.eot#iefix') format('embedded-opentype'),
+       font-url('dk_prince_frog-webfont.woff2') format('woff2'),
+       font-url('dk_prince_frog-webfont.woff') format('woff'),
+       font-url('dk_prince_frog-webfont.ttf') format('truetype'),
+       font-url('dk_prince_frog-webfont.svg#svgDKPrince') format('svg');
+}
+
+body {
+  font-family: 'DK Prince', Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  font-size: 1em;
+  font-color: #404040;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+a {
+  color: #d6bc51;
+}
+
+a:hover {
+  color: #1a3d56;
+  text-decoration: none;
+}
+
+#intro {
+  position: relative;
+  top: 30%
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a {
+  color: #d6bc51;
+  font-size: 2em;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li >a:hover {
+  color: #1a3d56;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #fff;
+}
+
+.navbar-nav {
+  position: relative;
+  top: 15px;
+  right: 30px;
+  text-transform: uppercase;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	border: none;
+	background-color: transparent;
+}
+
+.desktop-logo {
+  width: 70%;
+  margin-left: 10%;
+}
+
+.navbar-brand .mobile-logo {
+  display: none;
+}
+
+.intro-portrait {
+  display: none;
+  border: none;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  position: relative;
+  top: -40px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+}
+
+.headline {
+  margin-bottom: 20px;
+}
+
+.aboutguy,
+.contactguy {
+	width: 70%;
+	position: relative;
+}
+
+.about-guy {
+  top: 80px;
+}
+
+.contactguy {
+  top: 50px;
+  left: -15px;
+}
+.work-description {
+  position: relative;
+  top: 50px;
+}
+
+.work-description > h2 {
+  text-transform: uppercase;
+}
+
+.skill-icons > .img-responsive {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.html-icon,
+.css-icon {
+  width: 10%;
+}
+
+.jq-icon {
+  width: 18%;
+}
+
+.bs-icon,
+.ror-icon {
+  width: 30%;
+}
+
+.work-guy {
+  position: relative;
+  top: 150px;
+}
+
+.carousel-control.right,
+.carousel-control.left  {
+  background-image: none;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow-left {
+  left: 15px;
+}
+
+.arrow-left {
+  right: 15px;
+}
+
+.line {
+  margin-top: 20px;
+}
+
+#contact > .row {
+  margin-bottom: 40px;
+}
+
+input[name="name"],
+input[name="email"],
+textarea {
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  padding: 10px;
+  -webkit-border-image: url(../img/linie.png) 40% repeat;
+  -o-border-image: url(../img/linie.png) 40% repeat;
+  border-image: url(../img/linie.png) 40% repeat;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  width: 100px;
+  border: 1px solid #1a3d56;
+}
+
+.antispam {
+  display:none;
+}
+
+.social-icons {
+  width: 43%;
+  margin-bottom: 10px;
+}
+
+@media screen and (orientation:portrait) {
+  #intro {
+    top: 20%;
+  }
+  .intro-landscape {
+    display: none;
+  }
+  .intro-portrait {
+    display: block;
+    width: 70%;
+  }
+
+  .navbar-brand .desktop-logo {
+    display: none;
+  }
+
+  .navbar-brand .mobile-logo {
+    display: block;
+    width: 60%;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+
+  .bounce {
+    display: none;
+  }
+
+  .line {
+    margin-top: 80px;
+    margin-bottom: 130px;
+  }
+
+  .line-last {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
